@@ -1,0 +1,135 @@
+/* example CSS selectors 
+
+--- wildcard selector
+*{
+    background-color:cyan;
+}
+--- element selector
+button{
+    font-size:30px;
+}
+--- multiple element selectors
+h1,h2{color:darkslateblue;}
+
+--- ID selector
+--- "#" Ex #someID{}
+
+--- Class selector
+--- "." Ex .someClass{}
+
+--- Decendant selector (drilldown selector)
+--- ul" "li" "a ex: ul li a{} 
+
+--- Adjacent Selector
+--- h1 "+" p ex: h1 + p {}
+
+--- direct child 
+--- h1 ">" p  ex h1 > p{}
+
+--- attribute selector 
+--- input "[type='password']" ex: input[type="password"]{}
+
+--- psuedo selectors
+--- a":"selected ex: a:hover{color:red;}
+*/
+
+
+
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+/* multiple element selectors */
+h1,
+h2 {
+    color: #1d3557;
+}
+
+/* id selector */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+/* class selector */
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post a {
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.post a:hover {
+    text-decoration: underline;
+    color: #2a9d8f;
+}
+
+footer a {
+    color: #e63946;
+}
+
+input+button {
+    background-color: #2a9d8f;
+}
+
+/* Adjecent selector */
+h2+button {
+    font-size: 20px;
+    background-color: #e76f51;
+}
+
+/* direct decendent selector */
+footer>a {
+    color: #2a9d8f;
+}
+
+/* attribute selector */
+input[type="password"] {
+    color: #e76f51;
+}
+
+section[class="post"] {
+    background-color: #e9c46a;
+}
+
+a[href*="google"] {
+    color: #e9c46a;
+}
+
+/* psuedo selector */
+.post button:hover {
+    background-color: #e9c46a;
+    color: #e63946;
+}
+
+.post button:active {
+    background-color: #e63946;
+    color: #e9c46a;
+}
+
+.post:nth-child(odd) {
+    background-color: #fbe09c;
+}
+
+.post h2::first-letter {
+    color: #6d597a;
+}
+
+::selection {
+    background: #6d597a;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <main>
+        <h1>Example Form elements</h1>
+        <form action="/pizza">
+            <div>
+                <label for="username">Enter a Username</label>
+
+                <input name="username" type="text" placeholder="username" id="username">
+            </div>
+            <div>
+                <label for="password">Enter a Password</label>
+
+                <input name="password" type="password" placeholder="password" id="password"><br>
+            </div>
+            <div>
+                <label for="email">Enter a email</label>
+
+                <input name="email" type="email" placeholder="Email" id="email"><br>
+            </div>
+            <div>
+                <label for="color">Pick a Color</label>
+
+                <input name="color" type="color" id="color"><br>
+            </div>
+            <div>
+                <button type="button">Submit</button>
+            </div>
+        </form>
+        <br>
+        <hr>
+        <div>
+
+            <h2>Leveraging outside searches</h2>
+            <h3>Search Google</h3>
+            <form action="https://www.google.com/search">
+                <label for="formgsearch">Google Search</label>
+                <input type="text" name="q" id="formgsearch" placeholder="Type something">
+                <button>Search Google</button>
+            </form>
+
+            <h3>Example Youtube Search</h3>
+            <form action="https://www.youtube.com/results">
+                <label for=" formytsearch">Youtube Search</label>
+                <input type="text" name="search_query" id="formytsearch" placeholder="Type something">
+                <button>Search Youtube</button>
+            </form>
+
+            <h2>More inputs</h2>
+            <h3>Checbkox</h3>
+            <form action="/tos">
+                <label for="agree">I agree to everything</label>
+                <input id="agree" name="agree_tos" type="checkbox" checked>
+                <button>SUBMIT</button>
+            </form>
+            <h3>Radio</h3>
+            <form action="/size">
+                <label for="sizexs">XS</label>
+                <input type="radio" name="size" id="sizexs" value="xs">
+                <label for="sizem">M</label>
+                <input type="radio" name="size" id="sizem" value="M">
+                <label for="size;">L</label>
+                <input type="radio" name="size" id="sizel" value="L">
+                <button>SUBMIT</button>
+            </form>
+
+            <h3>Select</h3>
+            <form action="/pets">
+                <select name="pet" id="pet-select">
+                    <option value="fish">Fish</option>
+                    <option value="cat" selected>Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="bird">Bird</option>
+                    <option value="lizard">Lizard</option>
+                    <option value="snake">Snake</option>
+                </select>
+                <button>SUBMIT</button>
+            </form>
+
+            <h3>Range</h3>
+            <form action="food">
+                <label for="foodrange">Food needed</label>
+                <input type="range" name="foodstuff" id="foodrange" min="0" max="2500" step="100" value="1000">
+                <button>Submit</button>
+            </form>
+
+            <h3>Validations</h3>
+
+            <form action="/dummy">
+                <label for="formfirst">Enter First Name <sup>*</sup></label>
+                <input type="text" id="formfirst" name="first" placeholder="Ex: Chris" required>
+                <label for="formuser">Username</label>
+                <input type="text" id="formuser" name="formuser" minlength="3" maxlength="15" required>
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

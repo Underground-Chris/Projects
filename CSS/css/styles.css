@@ -1,0 +1,14 @@
+h1 {
+    color: rgb(102, 102, 157);
+    background-color: #8b8b8b;
+}
+
+h2 {
+    color: hsl(60, 61%, 59%);
+    background-color: #7b7b7b;
+}
+
+h3 {
+    color: rgb(198, 93, 54);
+    background-color: #6b6b6b;
+}
